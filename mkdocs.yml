@@ -1,0 +1,29 @@
+site_name: python-llm-gateway
+site_description: FastAPI-based LLM gateway with provider fallback, semantic caching, observability, and cost tracking.
+repo_url: https://github.com/anatolii-stepanchuk-dev/python-llm-gateway
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths:
+            - src
+          options:
+            docstring_style: google
+            show_source: true
+            show_signature_annotations: true
+            separate_signature: true
+
+nav:
+  - Home: index.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - ADRs: adr/index.md
+  - Development:
+      - TDD Workflow: development/tdd.md
+  - API Reference:
+      - python_llm_gateway: reference/python_llm_gateway.md
