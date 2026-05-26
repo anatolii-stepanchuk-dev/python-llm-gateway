@@ -61,3 +61,22 @@ Client
   -> LLM Provider
   -> Cost Tracker
   -> Response
+```
+
+## Verify
+
+Run:
+
+```bash
+uv run pytest
+uv run ruff check .
+uv run mypy src tests
+```
+
+## Local Development
+
+Run the application:
+
+```bash
+uv run uvicorn python_llm_gateway.main:app --reload
+```
